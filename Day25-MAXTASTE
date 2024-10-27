@@ -1,0 +1,14 @@
+
+T = int(input().strip())
+results = []
+for _ in range(T):
+    
+    a, b, c, d = map(int, input().strip().split())
+    
+    
+    max_tastiness = max(a + c, a + d, b + c, b + d)
+    
+   
+    results.append(max_tastiness)
+for result in results:
+    print(result)
