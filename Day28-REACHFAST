@@ -1,0 +1,24 @@
+
+T = int(input().strip())
+
+
+results = []
+
+# Process each test case
+for _ in range(T):
+    
+    A, B, K = map(int, input().strip().split())
+    
+    
+    distance = abs(A - B)
+    
+   
+    steps = distance // K
+    if distance % K != 0:
+        steps += 1
+    
+   
+    results.append(steps)
+
+
+print("\n".join(map(str, results)))
